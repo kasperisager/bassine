@@ -1,0 +1,48 @@
+{
+  "name": "bassine",
+  "version": "0.0.0",
+  "description": "An asynchronous and bounded resource pool for generic objects",
+  "license": "MIT",
+  "repository": "kasperisager/bassine",
+  "author": "Kasper Kronborg Isager <kasperisager@gmail.com>",
+  "scripts": {
+    "test": "xo && nyc ava",
+    "coverage": "nyc report --reporter=html",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "transpile": "babel lib -d dist",
+    "prepublish": "npm run transpile"
+  },
+  "main": "dist/pool.js",
+  "jsnext:main": "lib/pool.js",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "keywords": [
+    "es6",
+    "async",
+    "resource",
+    "pool"
+  ],
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-cli": "^6.16.0",
+    "coveralls": "^2.11.14",
+    "nyc": "^8.3.1",
+    "xo": "^0.17.0"
+  },
+  "ava": {
+    "require": [
+      "babel-core/register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "exnext": true
+  }
+}
