@@ -20,7 +20,7 @@ $ npm install --save bassine
 
 ## Usage
 
-[<img src=https://tonicdev.com/favicon.ico width=26 align=top> **Try out Bassine in your browser**](https://tonicdev.com/npm/bassine)
+[<img src="https://www.npmjs.com/static/images/runkit.svg" width=24 align=top> __Try out Bassine in your browser__](https://runkit.com/npm/bassine)
 
 ```js
 const pool = new Pool(2, async i => i);
